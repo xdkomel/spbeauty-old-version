@@ -1,6 +1,6 @@
 import './App.css';
 import Sidebar from './Layouts/Sidebar/Sidebar'
-import Page from './Layouts/Page';
+import Page from './Layouts/Page/Page';
 
 function App() {
   return (

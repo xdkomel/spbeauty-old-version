@@ -2,6 +2,7 @@ import ProfileIcon from '../../../Icons/ProfileIcon'
 import GridIcon from '../../../Icons/GridIcon'
 import SettingsIcon from '../../../Icons/SettingsIcon'
 import SideMenuGroup from './SideMenuGroup';
+import Clickable from '../../../Components/Clickable';
 
 function SideMenuContents(props) {
     return (
@@ -30,14 +31,14 @@ function SideMenuContents(props) {
                 ]}
                 active='about-company'
             />
-            <button class='button'>
-            <SideMenuGroup 
-                icon={<SettingsIcon/>} 
-                groupName='Админ-панель' 
-                tabs={[]}
-                active='about-company'
-            />
-            </button>
+            <Clickable>
+                <SideMenuGroup 
+                    icon={<SettingsIcon/>} 
+                    groupName='Админ-панель' 
+                    tabs={[]}
+                    active='about-company'
+                />
+            </Clickable>
         </div>
     );
   }

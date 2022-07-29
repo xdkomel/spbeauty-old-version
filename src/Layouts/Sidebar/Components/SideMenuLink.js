@@ -1,4 +1,5 @@
 import ArrowExpandIcon from '../../../Icons/ArrowExpandIcon'
+import Clickable from '../../../Components/Clickable';
 
 function SideMenuLink(props) {
     const DivStyle = {
@@ -7,10 +8,12 @@ function SideMenuLink(props) {
     }
     
     return (
-        <button class="d-flex align-self-center align-items-center justify-content-start px-3 py-2 button" style={DivStyle}>
-            <ArrowExpandIcon/>
-            <div class='ms-2'>{props.name}</div>
-        </button>
+        <Clickable>
+            <div class="d-flex align-self-center align-items-center justify-content-start px-3 py-2" style={DivStyle}>
+                <ArrowExpandIcon/>
+                <div class='ms-2'>{props.name}</div>
+            </div>
+        </Clickable>
     );
   }
   
