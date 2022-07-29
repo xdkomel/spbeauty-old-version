@@ -4,7 +4,7 @@ import ArrowBackIcon from "../../Icons/ArrowBackIcon"
 
 function Sidebar() {
     return (
-        <div class='grey-text px-1 light-grey-background fill-y'>
+        <div class='steel-gray-500 px-1 light-gray-background fill-y stroke-right'>
             <div class='p-3'>
                 <IconedButton text='На главную' icon={<ArrowBackIcon/>}/>
             </div>

@@ -1,9 +1,21 @@
-.light-grey-background {
+.light-gray-background {
   background-color: #F8FAFC;
+}
+
+.steel-gray-500 {
+  color: #64748B;
+}
+
+.steel-gray-900 {
+  color: #0F172A;
 }
 
 .fill-y {
   height:100vh;
+}
+
+.stroke-right {
+  border-right: solid #ECEEF1 1px;
 }
 
 .clickable {
@@ -17,6 +29,31 @@
 }
 .clickable:hover {
   opacity: 70%;
+}
+
+.text-field {
+  outline: none;
+  border-radius: 32px;
+  border-color: #E2E8F0;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.wrapper {
+  position:relative;
+  width: 200px;
+}
+
+.input {
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  box-sizing:border-box;
+  right: 12px;
+  top:50%;
+  transform: translateY(-50%);
 }
 
 

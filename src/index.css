@@ -29,13 +29,10 @@ body {
   line-height: 16.1px;
 }
 
-span, p, a, div, .body {
+span, p, a, div, input, .body {
   font-weight: 400;
   font-size: 14px;
   line-height: 16.1px;
   letter-spacing: -0.005em;
 }
 
-.grey-text {
-  color: #64748B;
-}

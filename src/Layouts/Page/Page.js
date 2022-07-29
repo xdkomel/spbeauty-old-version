@@ -1,7 +1,9 @@
+import Header from "./Header/Header";
+
 function Page() {
     return (
-      <div class='inline'>
-        <h1>Данные о компании</h1>
+      <div class='flex-grow-1'>
+        <Header/>
       </div>
     );
   }
