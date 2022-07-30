@@ -22,6 +22,10 @@
   width: 100%;
 }
 
+.fit-width {
+  width:fit-content;
+}
+
 .stroke-right {
   border-right: solid #ECEEF1 1px;
 }
@@ -87,8 +91,18 @@
   min-width: 144px;
 }
 
+.temp-button {
+  background-color: #F2F2F2;
+  border: solid #DFDFDF 1px;
+  color: #2C3540;
+}
+
 select {
   -moz-appearance:none; /* Firefox */
   -webkit-appearance:none; /* Safari and Chrome */
   appearance:none;
+}
+
+.ratio-square {
+  aspect-ratio: 1/1;
 }
