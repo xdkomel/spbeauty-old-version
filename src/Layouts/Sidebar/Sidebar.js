@@ -1,6 +1,6 @@
 import SideMenuContents from "./Components/SideMenuContents";
-import IconedButton from "../../Components/IconedButton"
-import ArrowBackIcon from "../../Icons/ArrowBackIcon"
+import IconedButton from "../../Components/IconedButton";
+import ArrowBackIcon from "../../Icons/ArrowBackIcon";
 
 function Sidebar() {
     return (
