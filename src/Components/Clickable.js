@@ -1,7 +1,11 @@
 
 function Clickable(props) {
+    let classes = 'clickable'
+    if (props.fillWidth == true) {
+        classes += ' fill-width'
+    }
     return (
-        <button class='clickable'>{props.children}</button>
+        <button class={classes}>{props.children}</button>
     );
 }
   
