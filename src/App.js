@@ -1,19 +1,17 @@
-import './App.css';
+// import './App.css';
 import Sidebar from './Layouts/Sidebar/Sidebar'
 import Page from './Layouts/Page/Page';
-import styled from 'styled-components'
 
-const Div = styled.div`
-color: red;
-`
+import IconedButton from './Components/IconedButton';
+import ArrowBackIcon from './Icons/ArrowBackIcon';
+
 
 function App() {
   return (
-    <Div>TEXT</Div>
-    // <div class='d-flex flex-row'>
-    //   <Sidebar/>
-    //   <Page/>
-    // </div>
+    <div className='d-flex flex-row'>
+      <Sidebar/>
+      <Page/>
+    </div>
   );
 }
 

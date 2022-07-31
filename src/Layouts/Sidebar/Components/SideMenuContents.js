@@ -1,12 +1,19 @@
-import ProfileIcon from '../../../Icons/ProfileIcon'
-import GridIcon from '../../../Icons/GridIcon'
-import SettingsIcon from '../../../Icons/SettingsIcon'
+import ProfileIcon from '../../../Icons/ProfileIcon';
+import GridIcon from '../../../Icons/GridIcon';
+import SettingsIcon from '../../../Icons/SettingsIcon';
 import SideMenuGroup from './SideMenuGroup';
 import Clickable from '../../../Components/Clickable';
+import styled from 'styled-components';
+
+const ButtonContainer = styled.div`
+&:hover {
+    opacity: 0.7;
+}
+`
 
 function SideMenuContents(props) {
     return (
-        <div class="mt-5">
+        <div className="mt-5">
             <SideMenuGroup 
                 icon={<ProfileIcon/>} 
                 groupName='Личный профиль' 
@@ -31,14 +38,17 @@ function SideMenuContents(props) {
                 ]}
                 active='about-company'
             />
-            <Clickable>
-                <SideMenuGroup 
-                    icon={<SettingsIcon/>} 
-                    groupName='Админ-панель' 
-                    tabs={[]}
-                    active='about-company'
-                />
-            </Clickable>
+            <ButtonContainer>
+                <Clickable>
+                    <SideMenuGroup 
+                        icon={<SettingsIcon/>} 
+                        groupName='Админ-панель' 
+                        tabs={[]}
+                        active='about-company'
+                    />
+                </Clickable>
+            </ButtonContainer>
+            
         </div>
     );
   }

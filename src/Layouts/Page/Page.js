@@ -3,9 +3,9 @@ import AboutCompany from './AboutCompany/AboutCompany'
 
 function Page() {
     return (
-      <div class='flex-grow-1'>
+      <div className='flex-grow-1'>
         <Header/>
-        <div class='container'>
+        <div className='container'>
           <AboutCompany/>
         </div>
       </div>

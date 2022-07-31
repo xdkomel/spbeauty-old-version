@@ -5,7 +5,7 @@ function AboutCompany() {
     return (
         <div>
             <Heading/>
-            <div class='d-flex flex-column mt-5'>
+            <div className='d-flex flex-column mt-5'>
                 <General/>
                 <Addresses/>
             </div>

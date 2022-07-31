@@ -1,14 +1,33 @@
-import UploadAvatarIcon from '../../../Icons/UploadAvatarIcon'
+import UploadAvatarIcon from '../../../Icons/UploadAvatarIcon';
 import Clickable from '../../../Components/Clickable';
+import styled from 'styled-components';
+
+const UploadButton = styled.div`
+    position: absolute;
+    box-sizing:border-box;
+    right: 0px;
+    top:100%;
+    transform: translateY(-100%);
+    &:hover {
+        opacity: 70%;
+    }
+`;
+const WrapperAvatar = styled.div`
+    position:relative;
+    width: 96px;
+`;
+
 function Avatar() {
     return (
-        <div class='wrapper-avatar'>
-            <img src={require('../../../images/AppAvatar.png')}></img>
+        <WrapperAvatar>
+            <img src={require('../../../Images/AppAvatar.png')}></img>
             <Clickable>
-                <div class='upload-button'><UploadAvatarIcon/></div>
+                <UploadButton>
+                    <UploadAvatarIcon/>
+                </UploadButton>
             </Clickable>
-        </div>
+        </WrapperAvatar>
     );
 }
 
-export default Avatar
+export default Avatar;

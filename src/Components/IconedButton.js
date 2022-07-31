@@ -2,12 +2,12 @@ import Clickable from "./Clickable";
 function IconedButton(props) {
     return (
         <Clickable>
-            <div class="d-flex align-self-center align-items-center justify-content-start">
+            <div className="d-flex flex-row justify-content-start align-self-center align-items-center">
                 {props.icon}
-                <div class='ms-2 headline'>{props.text}</div>
+                <div className='ms-1 headline'>{props.text}</div>
             </div>
         </Clickable>
     );
-  }
-  
-  export default IconedButton;
+}
+    
+export default IconedButton;

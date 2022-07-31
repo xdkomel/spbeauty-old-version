@@ -1,0 +1,37 @@
+body {
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.large-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27.6px;
+  }
+  
+  .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.1px;
+  }
+  
+  .headline {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17.25px;
+  }
+  
+  .caption {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.1px;
+  }
+  
+  span, p, a, div, input, .body {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.1px;
+    letter-spacing: -0.005em;
+  }
+  
