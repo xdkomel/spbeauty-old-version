@@ -5,14 +5,14 @@ import styled from 'styled-components';
 
 const Container = styled.div`
     background-color: #F8FAFC;
-    color: #6474B8;
+    color: #64748B;
     height: 100vh;
     border-right: solid #ECEEF1 1px;
 `;
 
 const ButtonContainer = styled.div`
     &:hover {
-        opacity: 0.7;
+        color: #64748BB8;
     }
 `;
 
