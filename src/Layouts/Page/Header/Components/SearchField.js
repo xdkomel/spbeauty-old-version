@@ -8,14 +8,13 @@ const WrapperInput = styled.div`
 `;
 
 const Input = styled.input`
-    background-color: #F8FAFC;
     outline: none;
     border-radius: 0px;
     border: solid #152842 1px;
     background-color: #D9E2EF;
     width: 100%;
     &:hover {
-        background-color: #F8FAFC8B;
+        background-color: #D9E2EFB8;
     }
 `;
 
