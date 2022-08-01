@@ -1,4 +1,4 @@
-import Sidebar from './Layouts/Sidebar/Sidebar'
+import Sidebar from './Layouts/Sidebar/Sidebar';
 import Page from './Layouts/Page/Page';
 
 

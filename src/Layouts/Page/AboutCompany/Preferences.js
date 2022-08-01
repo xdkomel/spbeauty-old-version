@@ -13,4 +13,4 @@ function Preferences() {
     );
 }
 
-export default Preferences
+export default Preferences;

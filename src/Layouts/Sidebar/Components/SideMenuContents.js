@@ -6,10 +6,10 @@ import Clickable from '../../../Components/Clickable';
 import styled from 'styled-components';
 
 const ButtonContainer = styled.div`
-&:hover {
-    opacity: 0.7;
-}
-`
+    &:hover {
+        opacity: 0.7;
+    }
+`;
 
 function SideMenuContents(props) {
     return (
@@ -48,9 +48,8 @@ function SideMenuContents(props) {
                     />
                 </Clickable>
             </ButtonContainer>
-            
         </div>
     );
-  }
+}
   
-  export default SideMenuContents;
+export default SideMenuContents;

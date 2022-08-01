@@ -1,5 +1,5 @@
 import Header from "./Header/Header";
-import AboutCompany from './AboutCompany/AboutCompany'
+import AboutCompany from './AboutCompany/AboutCompany';
 
 function Page() {
     return (
@@ -10,6 +10,6 @@ function Page() {
         </div>
       </div>
     );
-  }
-  
-  export default Page;
+}
+
+export default Page;

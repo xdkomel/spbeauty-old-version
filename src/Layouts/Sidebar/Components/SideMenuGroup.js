@@ -16,6 +16,6 @@ function SideMenuGroup(props) {
             })}
         </div>
     );
-  }
+}
   
-  export default SideMenuGroup;
+export default SideMenuGroup;

@@ -7,7 +7,7 @@ const ButtonWrapper = styled.div`
     &:hover {
         opacity: 70%;
     }
-`
+`;
 
 function IconsRow() {
     return (

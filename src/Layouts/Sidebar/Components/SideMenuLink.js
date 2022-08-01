@@ -20,6 +20,6 @@ function SideMenuLink(props) {
             </Container>
         </Clickable>
     );
-  }
+}
   
-  export default SideMenuLink;
+export default SideMenuLink;
