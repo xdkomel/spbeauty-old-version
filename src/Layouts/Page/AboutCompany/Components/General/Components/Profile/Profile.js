@@ -7,7 +7,7 @@ function Profile() {
                 <div className='title steel-gray-900'>SPBEAUTY</div>
                 <div className='steel-gray-500'>Салон красоты</div>
                 <div className='steel-gray-500'>Санкт-Петербург, Невский пр-т. 28</div>
-            </div>
+            </div>                  
         </div>
     );
 }

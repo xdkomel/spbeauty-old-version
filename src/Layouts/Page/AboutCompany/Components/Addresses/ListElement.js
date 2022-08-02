@@ -1,7 +1,7 @@
-import Clickable from '../../../Components/Clickable';
+import Clickable from '../../../../../Components/Clickable';
 import styled from 'styled-components';
-import EditIcon from '../../../Icons/EditIcon';
-import RemoveIcon from '../../../Icons/RemoveIcon';
+import EditIcon from '../../../../../Icons/EditIcon';
+import RemoveIcon from '../../../../../Icons/RemoveIcon';
 
 const Button = styled.div`
     background-color: #F2F2F2;

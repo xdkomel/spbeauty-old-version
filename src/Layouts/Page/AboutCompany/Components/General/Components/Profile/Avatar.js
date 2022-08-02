@@ -1,5 +1,5 @@
-import UploadAvatarIcon from '../../../Icons/UploadAvatarIcon';
-import Clickable from '../../../Components/Clickable';
+import UploadAvatarIcon from '../../../../../../Icons/UploadAvatarIcon';
+import Clickable from '../../../../../../Components/Clickable';
 import styled from 'styled-components';
 
 const UploadButton = styled.div`
@@ -20,7 +20,7 @@ const WrapperAvatar = styled.div`
 function Avatar() {
     return (
         <WrapperAvatar>
-            <img src={require('../../../Images/AppAvatar.png')}></img>
+            <img src={require('../../../../../../../Images/AppAvatar.png')}></img>
             <Clickable>
                 <UploadButton>
                     <UploadAvatarIcon/>

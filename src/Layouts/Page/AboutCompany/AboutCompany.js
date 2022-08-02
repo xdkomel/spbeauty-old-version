@@ -1,6 +1,6 @@
-import Heading from "./Heading";
-import General from "./General";
-import Addresses from "./Addresses";
+import Heading from "./Components/Heading";
+import General from "./Components/General/General";
+import Addresses from "./Components/Addresses/Addresses";
 function AboutCompany() {
     return (
         <div>

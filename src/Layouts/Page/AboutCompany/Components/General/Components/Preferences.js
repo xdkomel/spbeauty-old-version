@@ -1,5 +1,5 @@
-import TitledTextInput from "../../../Components/TitledTextInput";
-import TitledSelector from "../../../Components/TitledSelector";
+import TitledTextInput from "../../../../../../Components/TitledTextInput";
+import TitledSelector from "../../../../../../Components/TitledSelector";
 function Preferences() {
     return (
         <div className='d-inline-flex flex-column gap-4'>

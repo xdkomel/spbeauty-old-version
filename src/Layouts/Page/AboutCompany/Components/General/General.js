@@ -1,6 +1,6 @@
 import Profile from "./Profile";
-import Preferences from "./Preferences";
-import PrimaryButton from "../../../Components/PrimaryButton";
+import Preferences from "./Components/Preferences";
+import PrimaryButton from "../../../../../Components/PrimaryButton";
 function General() {
     return (
         <div className='d-inline-flex flex-column'>
