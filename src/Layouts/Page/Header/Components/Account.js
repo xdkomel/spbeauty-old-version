@@ -18,7 +18,7 @@ function Account() {
         <div className='d-inline-flex align-items-center align-self-center'>
             <img src={require('../../../../Images/Avatar.png')}></img>
             <HoverWrapper>
-                <Text className='ms-2 me-1'>Антон И.</Text>
+                <Text className='headline ms-2 me-1'>Антон И.</Text>
                 <ArrowDownIcon/>
             </HoverWrapper>
             
