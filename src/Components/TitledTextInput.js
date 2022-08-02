@@ -8,7 +8,7 @@ const Input = styled.input`
     &:hover {
         background-color: #D9E2EFB8;
     }
-`
+`;
 
 function TitledTextInput(props) {
     const title = props.title == undefined ? 'Untitled' : props.title;

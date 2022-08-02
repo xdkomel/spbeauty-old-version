@@ -9,7 +9,7 @@ const Button = styled.div`
     &:hover {
         background-color: #4B759EB8;
     }
-`
+`;
 
 function SecondaryButton(props) {
     return (
