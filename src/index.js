@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
-import './typography.css';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap
+import './index.css'; // Import general styled
+import './typography.css'; // Import typography
+import './App.css';  // Import temporary styles
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

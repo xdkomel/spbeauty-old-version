@@ -11,7 +11,6 @@ const Button = styled.div`
         color: #2C3540B8;
     }
 `;
-
 const Option = styled.div`
     outline: none;
     border-radius: 0px;

@@ -1,8 +1,14 @@
 import styled from 'styled-components';
-
+/**
+ * Makes an HTML structure clickable via putting it into a default button tag.
+ * @param {*} props - are used without JS destruction:
+ *                    {Boolean} fillWidth - if the clickable view fills its parent (default: false),
+ *                    {*} children - the HTML structure.
+ * @returns a clickable HTML structure.
+ */
 function Clickable(props) {
     const fill = props.fillWidth === true;
-    const Buttonify = styled.button`
+    const Button = styled.button`
         background:transparent;
         border: none;
         outline: none;
@@ -13,7 +19,7 @@ function Clickable(props) {
         width: ${fill ? '100%' : 'fit-content'}
     `;
     return (
-        <Buttonify>{props.children}</Buttonify>
+        <Button>{props.children}</Button>
     );
 }
   
