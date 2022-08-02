@@ -16,7 +16,7 @@ function Clickable(props) {
         padding: 0;
         margin: 0;
         transition: background 0.1s, color 0.1s, opacity 0.1s;
-        width: ${fill ? '100%' : 'fit-content'}
+        width: ${fill ? '100%' : 'fit-content'};
     `;
     return (
         <Button>{props.children}</Button>
