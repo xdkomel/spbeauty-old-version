@@ -18,11 +18,11 @@ const ButtonContainer = styled.div`
 
 function Sidebar() {
     return (
-        <Container className='px-1'>
-            <ButtonContainer className='p-3'>
+        <Container className='px-1'>  
+            <ButtonContainer className='p-3'> {/* Button on the top left */}
                 <IconedButton text='На главную' icon={<ArrowBackIcon/>}/>
             </ButtonContainer>
-            <SideMenuContents/>
+            <SideMenuContents/> {/* Sidebar items */}
         </Container>
     );
 }

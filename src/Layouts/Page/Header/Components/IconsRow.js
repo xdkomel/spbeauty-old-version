@@ -11,7 +11,7 @@ const ButtonWrapper = styled.div`
 
 function IconsRow() {
     return (
-        <div className='d-inline-flex'>
+        <div className='d-inline-flex flex-row'>
             <Clickable>
                 <ButtonWrapper className='d-inline-flex ms-5 me-2'>
                     <MessagesIcon/>

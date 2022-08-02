@@ -11,7 +11,7 @@ const ButtonContainer = styled.div`
     }
 `;
 
-function SideMenuContents(props) {
+function SideMenuContents() {
     return (
         <div className="mt-5">
             <SideMenuGroup 
@@ -25,7 +25,7 @@ function SideMenuContents(props) {
                     ['Сменить пароль', 'change-password'],
                 ]}
                 active='about-company'
-            />
+            /> 
             <SideMenuGroup 
                 icon={<GridIcon/>} 
                 groupName='Компания' 
@@ -38,6 +38,7 @@ function SideMenuContents(props) {
                 ]}
                 active='about-company'
             />
+            {/* The last menu button is an empty SideMenuGroup */}
             <ButtonContainer>
                 <Clickable>
                     <SideMenuGroup 
