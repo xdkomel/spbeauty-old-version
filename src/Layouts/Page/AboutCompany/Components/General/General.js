@@ -1,4 +1,4 @@
-import Profile from "./Profile";
+import Profile from "./Components/Profile/Profile";
 import Preferences from "./Components/Preferences";
 import PrimaryButton from "../../../../../Components/PrimaryButton";
 function General() {

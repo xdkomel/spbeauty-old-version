@@ -1,5 +1,5 @@
-import UploadAvatarIcon from '../../../../../../Icons/UploadAvatarIcon';
-import Clickable from '../../../../../../Components/Clickable';
+import UploadAvatarIcon from '../../../../../../../Icons/UploadAvatarIcon';
+import Clickable from '../../../../../../../Components/Clickable';
 import styled from 'styled-components';
 
 const UploadButton = styled.div`
