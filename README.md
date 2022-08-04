@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# SPBEAUTY
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Структура проекта
+В директории `public` хранится манифест, подключение разных библиотек, скрипты на запуск и фавиконки. В директории `src` хранятся непосредственно файлы с кодом экранов.
+### `public`
+Здесь можно найти `index.html` с `head`, `body` и скриптами на запуск проекта, куда можно, например, вставить скрипты метрики. Здесь же подключаются шрифты.
+### `src`
+Главный скрипт с запуском всего приложения — `index.js`, именно он запускает модуль с приложением `App.js`. Также здесь подключаются: 
+* Стили Bootstrap.
+* `index.css` с фундаментальными стилями, относящимися ко всему проекту. Например, стили для тегов.
+* `typography.css` со стилями для текста. Все стили задаются с помощью селекторов CSS-классов.
+* `App.css` с временными стилями. В проекте не предполагается использование иных CSS-файлов кроме перечисленных уже двух с заданными функциями, вместо этого в продуктовой версии исползьзуется библиотека `styled-components`. Но если решить задачу с помощью библиотеки невозможно или разработчику не хватает компетенций, то временно прописать селекторы с CSS-классами можно в этот файл. Далее более старший по уровню разработчик перепишет все стили с использованием библиотеки и снова очистит его.
 
-## Available Scripts
+Также в `src` хранятся несколько директорий с главными принципом *«название директории описывает содержимое»*.
 
-In the project directory, you can run:
+### `Components`
+Универсальные компоненты, которые не привязаны своим использованием к конкретному разделу.
+### `Icons`
+React-компоненты из SVG иконок. Применяются в коде как обычные компоненты в виде HTML-тегов. Например, `<SearchIcon/>`.
+### `Images`
+Оригиналы изображений в PNG. Для использования необходимо вставлять путь в атрибут `src` тега `img`.
+### `Layouts`
+Экраны с собственными компонентами. Каждый визуальный блок описан в своей директории и состоит из главного JS-файла, одноимённого с названием директории, и компонентов, используемых для описания блока. Если компонентов для данного визуального блока использовано больше 2, их очень желательно собрать в отдельной папке `Components`.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Использованные библиотеки
+* React. 
+* Bootstrap. Полезными в вёрстке будут материалы: [про отступы](https://getbootstrap.com/docs/5.0/utilities/spacing/), [про флекс](https://getbootstrap.com/docs/5.0/utilities/flex/), [про грид](https://getbootstrap.com/docs/5.0/layout/grid/).
+* `styled-components`. Полезным в вёрстке будет [стартовый материал](https://styled-components.com/docs/basics#getting-started).
