@@ -1,4 +1,4 @@
-import SecondaryButton from "../../../../../Components/SecondaryButton";
+import PrimaryButton from "../../../../../Components/PrimaryButton";
 import ListElement from "./ListElement";
 function Addresses() {
     return (
@@ -6,7 +6,7 @@ function Addresses() {
             <div className='text-rg'>Адреса заведений</div>
             <ListElement>Санкт-Петербург, Невский пр-т. 28</ListElement>
             <ListElement>Санкт-Петербург, Казанская ул, 7</ListElement>
-            <SecondaryButton>Добавить филиал</SecondaryButton>
+            <PrimaryButton>Добавить филиал</PrimaryButton>
         </div>
     );
 }

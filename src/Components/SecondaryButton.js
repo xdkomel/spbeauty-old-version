@@ -2,12 +2,16 @@ import Clickable from "./Clickable";
 import styled from "styled-components";
 
 const Button = styled.div`
-    border: solid #152842 1px;
-    background-color: #4B759E;
+    background: #F2F2F2;
+    border: 1px solid #DFDFDF;
+    box-shadow: inset 0px 1px 2px rgba(10, 15, 26, 0.08);
     min-width: 144px;
-    color: white;
+    color: #152842;
     &:hover {
-        background-color: #4B759EB8;
+        background: linear-gradient(180deg, #DFEAF1 0%, #CFDDE8 100%);
+    }
+    &:active {
+        background: #DFDFDF;
     }
 `;
 
