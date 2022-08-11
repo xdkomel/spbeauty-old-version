@@ -5,7 +5,7 @@ function IconedButton({icon, text}) {
         <Clickable>
             <div className="d-flex flex-row justify-content-start align-self-center align-items-center">
                 {icon}
-                <div className='ms-1 headline'>{text}</div>
+                <div className='ms-1 text-md'>{text}</div>
             </div>
         </Clickable>
     );

@@ -14,7 +14,7 @@ const Button = styled.div`
 function PrimaryButton(props) {
     return (
         <Clickable>
-            <Button className='p-2 headline'>
+            <Button className='p-2 text-md'>
                 {props.children}
             </Button>
         </Clickable>
