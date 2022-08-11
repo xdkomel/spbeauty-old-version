@@ -2,21 +2,31 @@ import ArrowExpandIcon from '../../../Icons/ArrowExpandIcon';
 import Clickable from '../../../Components/Clickable';
 import styled from 'styled-components';
 
-function SideMenuLink({name, isActive}) {
+function SideMenuLink({name, isActive, icon}) {
     const Container = styled.div`
-        border-radius: 32px;
+        border-radius: 20px;
         background-color: ${isActive ? '#E6EAEE' : '#F8FAFC'};
+        padding-top: 12px;
+        padding-bottom: 12px;
 
         &:hover {
-            color: #909CAD;
+            opacity: 0.8;
         }
     `;
+
+    const TextContainer = styled.div`
+        margin-left: 12px;
+    `;
+
+    if (icon === undefined) {
+        icon = <ArrowExpandIcon/>;
+    }
     
     return (
         <Clickable fillWidth={true}>
-            <Container className="d-flex align-self-center align-items-center justify-content-start px-3 py-2">
-                <ArrowExpandIcon/>
-                <div className='ms-2'>{name}</div>
+            <Container className="d-flex align-self-center align-items-center justify-content-start px-3">
+                {icon}
+                <TextContainer>{name}</TextContainer>
             </Container>
         </Clickable>
     );

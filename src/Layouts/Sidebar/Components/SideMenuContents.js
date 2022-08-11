@@ -2,7 +2,6 @@ import ProfileIcon from '../../../Icons/ProfileIcon';
 import GridIcon from '../../../Icons/GridIcon';
 import SettingsIcon from '../../../Icons/SettingsIcon';
 import SideMenuGroup from './SideMenuGroup';
-import Clickable from '../../../Components/Clickable';
 import styled from 'styled-components';
 
 const ButtonContainer = styled.div`
@@ -10,13 +9,15 @@ const ButtonContainer = styled.div`
         opacity: 0.7;
     }
 `;
+const activeTab = 'about-company';
 
 function SideMenuContents() {
     return (
-        <div className="mt-5">
+        <div className='d-flex flex-column gap-2'>
             <SideMenuGroup 
                 icon={<ProfileIcon/>} 
-                groupName='Личный профиль' 
+                groupName='Личный профиль'
+                groupId='profile' 
                 tabs={[
                     ['Данные профиля', 'profile-data'],
                     ['Мои шаблоны', 'my-templates'],
@@ -24,10 +25,11 @@ function SideMenuContents() {
                     ['Настройки', 'settings'],
                     ['Сменить пароль', 'change-password'],
                 ]}
-                active='about-company'
+                active={activeTab}
             /> 
             <SideMenuGroup 
                 icon={<GridIcon/>} 
+                groupId='company'
                 groupName='Компания' 
                 tabs={[
                     ['Данные о компании', 'about-company'],
@@ -36,19 +38,16 @@ function SideMenuContents() {
                     ['Клиенты', 'clients'],
                     ['Рассылки', 'mailings'],
                 ]}
-                active='about-company'
+                active={activeTab}
             />
             {/* The last menu button is an empty SideMenuGroup */}
-            <ButtonContainer>
-                <Clickable>
-                    <SideMenuGroup 
-                        icon={<SettingsIcon/>} 
-                        groupName='Админ-панель' 
-                        tabs={[]}
-                        active='about-company'
-                    />
-                </Clickable>
-            </ButtonContainer>
+            <SideMenuGroup 
+                icon={<SettingsIcon/>} 
+                groupId='admin'
+                groupName='Админ-панель' 
+                tabs={[]}
+                active={activeTab}
+            />
         </div>
     );
 }

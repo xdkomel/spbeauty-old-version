@@ -1,11 +1,16 @@
 import Clickable from "./Clickable";
+import styled from "styled-components";
+
+const ButtonContainer = styled.div`
+    margin-left: 12px;
+`;
 
 function IconedButton({icon, text}) {
     return (
         <Clickable>
             <div className="d-flex flex-row justify-content-start align-self-center align-items-center">
                 {icon}
-                <div className='ms-1 text-md'>{text}</div>
+                <ButtonContainer className='text-md'>{text}</ButtonContainer>
             </div>
         </Clickable>
     );

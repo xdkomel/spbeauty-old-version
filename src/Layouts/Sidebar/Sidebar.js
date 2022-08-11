@@ -12,17 +12,23 @@ const Container = styled.div`
 
 const ButtonContainer = styled.div`
     &:hover {
-        color: #64748BB8;
+        color: #0F172A;
     }
+`;
+
+const SideMenuContainer = styled.div`
+    padding-top: 72px;
 `;
 
 function Sidebar() {
     return (
-        <Container className='px-1'>  
-            <ButtonContainer className='p-3'> {/* Button on the top left */}
+        <Container>  
+            <ButtonContainer className='m-3 d-flex'> {/* Button on the top left */}
                 <IconedButton text='На главную' icon={<ArrowBackIcon/>}/>
             </ButtonContainer>
-            <SideMenuContents/> {/* Sidebar items */}
+            <SideMenuContainer className='px-1'>
+                <SideMenuContents/> {/* Sidebar items */}
+            </SideMenuContainer>
         </Container>
     );
 }
