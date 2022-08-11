@@ -3,24 +3,31 @@ import Clickable from "../../../../Components/Clickable";
 import MessagesIcon from "../../../../Icons/MessagesIcon";
 import NotificationsIcon from "../../../../Icons/NotificationsIcon";
 
-const ButtonWrapper = styled.div`
+const ButtonLeftWrapper = styled.div`
+    padding-right:6px;
     &:hover {
-        opacity: 70%;
+        opacity: 80%;
+    }
+`;
+const ButtonRightWrapper = styled.div`
+    padding-left:6px;
+    &:hover {
+        opacity: 80%;
     }
 `;
 
 function IconsRow() {
     return (
-        <div className='d-inline-flex flex-row'>
+        <div className='d-inline-flex flex-row align-items-center align-self-center'>
             <Clickable>
-                <ButtonWrapper className='d-inline-flex ms-5 me-2'>
+                <ButtonLeftWrapper className='d-inline-flex'>
                     <MessagesIcon/>
-                </ButtonWrapper>
+                </ButtonLeftWrapper>
             </Clickable>
             <Clickable>
-                <ButtonWrapper className='d-inline-flex ms-2 me-5'>
+                <ButtonRightWrapper className='d-inline-flex'>
                     <NotificationsIcon/>
-                </ButtonWrapper>
+                </ButtonRightWrapper>
             </Clickable>
         </div>
     );

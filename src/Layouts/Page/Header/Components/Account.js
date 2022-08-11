@@ -8,7 +8,7 @@ const Text = styled.div`
 const HoverWrapper = styled.div`
     display: inherit;
     &:hover {
-        opacity: 70%;
+        opacity: 80%;
     }
 `;
 
@@ -17,8 +17,8 @@ function Account() {
         <Clickable>
         <div className='d-inline-flex align-items-center align-self-center'>
             <img src={require('../../../../Images/Avatar.png')}></img>
-            <HoverWrapper>
-                <Text className='text-rg-bg ms-2 me-1'>Антон И.</Text>
+            <HoverWrapper className='d-inline-flex align-items-center align-self-center'>
+                <Text className='text-rg-bd ms-3 me-2'>Антон И.</Text>
                 <ArrowDownIcon/>
             </HoverWrapper>
             

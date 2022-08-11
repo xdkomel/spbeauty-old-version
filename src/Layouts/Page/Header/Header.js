@@ -10,9 +10,13 @@ const Container = styled.div`
 function Header() {
     return (
         <Container className='d-flex justify-content-end align-items-center align-self-center px-4 py-3'>
-            <SearchField/>
+            <div className='me-4'>
+                <SearchField/>
+            </div>
             <IconsRow/>
-            <Account/>
+            <div className='ms-3'>
+                <Account/>
+            </div>
         </Container>
     );
 }

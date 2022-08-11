@@ -13,7 +13,7 @@ function Clickable(props) {
         width: ${fill ? '100%' : 'fit-content'};
     `;
     return (
-        <Button>{props.children}</Button>
+        <Button className='d-flex'>{props.children}</Button>
     );
 }
   
