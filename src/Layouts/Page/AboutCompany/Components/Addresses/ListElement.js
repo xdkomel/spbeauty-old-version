@@ -1,7 +1,8 @@
-import Clickable from '../../../../../Components/Clickable';
 import styled from 'styled-components';
+import SecondaryButton from '../../../../../Components/SecondaryButton';
 import EditIcon from '../../../../../Icons/EditIcon';
 import RemoveIcon from '../../../../../Icons/RemoveIcon';
+import IconOnlyButton from '../../../../../Components/IconOnlyButton.js';
 
 const Button = styled.div`
     background-color: #F2F2F2;
@@ -16,18 +17,15 @@ const Option = styled.div`
     border-radius: 0px;
     border: solid #152842 1px;
     background-color: #D9E2EF;
+    color: #666787;
 `;
 
 function ListElement(props) {
     return (
-        <div className='d-flex flex-row align-items-center align-self-stretch gap-1'>
+        <div className='d-flex flex-row align-items-center align-self-stretch gap-2'>
             <Option className='flex-grow-1 p-2'>{props.children}</Option>
-            <Clickable>
-                <Button className='ms-1 p-2'>Ред.</Button>
-            </Clickable>   
-            <Clickable>
-                <Button className='ms-1 p-2'>Удл.</Button>
-            </Clickable>
+            <SecondaryButton minWidth='0'>Ред.</SecondaryButton>
+            <SecondaryButton minWidth='0'>Удл.</SecondaryButton>
         </div>
     );
 }

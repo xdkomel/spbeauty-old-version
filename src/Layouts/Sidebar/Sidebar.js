@@ -1,5 +1,5 @@
 import SideMenuContents from "./Components/SideMenuContents";
-import IconedButton from "../../Components/IconedButton";
+import IconAndTextButton from "../../Components/IconAndTextButton";
 import ArrowBackIcon from "../../Icons/ArrowBackIcon";
 import styled from 'styled-components';
 
@@ -24,7 +24,7 @@ function Sidebar() {
     return (
         <Container>  
             <ButtonContainer className='m-3 d-flex'> {/* Button on the top left */}
-                <IconedButton text='На главную' icon={<ArrowBackIcon/>}/>
+                <IconAndTextButton text='На главную' icon={<ArrowBackIcon/>}/>
             </ButtonContainer>
             <SideMenuContainer className='px-1'>
                 <SideMenuContents/> {/* Sidebar items */}

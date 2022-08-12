@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Clickable from "../../../../Components/Clickable";
 import MessagesIcon from "../../../../Icons/MessagesIcon";
 import NotificationsIcon from "../../../../Icons/NotificationsIcon";
+import IconOnlyButton from "../../../../Components/IconOnlyButton";
 
 const ButtonLeftWrapper = styled.div`
     padding-right:6px;
@@ -19,16 +20,12 @@ const ButtonRightWrapper = styled.div`
 function IconsRow() {
     return (
         <div className='d-inline-flex flex-row align-items-center align-self-center'>
-            <Clickable>
-                <ButtonLeftWrapper className='d-inline-flex'>
-                    <MessagesIcon/>
-                </ButtonLeftWrapper>
-            </Clickable>
-            <Clickable>
-                <ButtonRightWrapper className='d-inline-flex'>
-                    <NotificationsIcon/>
-                </ButtonRightWrapper>
-            </Clickable>
+            <ButtonLeftWrapper>
+                <IconOnlyButton icon={<MessagesIcon/>}/>
+            </ButtonLeftWrapper>
+            <ButtonRightWrapper>
+               <IconOnlyButton icon={<NotificationsIcon/>}/>
+            </ButtonRightWrapper>
         </div>
     );
 }

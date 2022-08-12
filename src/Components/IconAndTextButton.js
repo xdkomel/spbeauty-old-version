@@ -5,7 +5,7 @@ const ButtonContainer = styled.div`
     margin-left: 12px;
 `;
 
-function IconedButton({icon, text}) {
+function IconAndTextButton({icon, text}) {
     return (
         <Clickable>
             <div className="d-flex flex-row justify-content-start align-self-center align-items-center">
@@ -16,4 +16,4 @@ function IconedButton({icon, text}) {
     );
 }
     
-export default IconedButton;
+export default IconAndTextButton;
