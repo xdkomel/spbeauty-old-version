@@ -16,13 +16,15 @@ const Select = styled.select`
     }
 `;
 
-function TitledSelector(props) {
-    const title = props.title == undefined ? 'Untitled' : props.title;
+function TitledSelector({title, options}) {
+    const Title = title === undefined ? 
+        (<div></div>) : 
+        (<div>{title}</div>);
     return (
         <div className='d-flex flex-column gap-2'>
-            <div>{title}</div>
+            {Title}
             <Select className='p-2'>
-                {props.options.map(optionName => {
+                {options.map(optionName => {
                     return (
                         <option key={optionName}>{optionName}</option>
                     );

@@ -11,13 +11,14 @@ const Input = styled.input`
     }
 `;
 
-function TitledTextInput(props) {
-    const title = props.title == undefined ? 'Untitled' : props.title;
-    const text = props.text == undefined ? 'Default' : props.text;
+function TitledTextInput({title, def}) {
+    const Title = title === undefined ? 
+        (<div></div>) : 
+        (<div>{title}</div>);
     return (
         <div className='d-flex flex-column gap-2'>
-            <div>{title}</div>
-            <Input className='p-2' defaultValue={text} ></Input>
+            {Title}
+            <Input className='p-2' defaultValue={def} ></Input>
         </div>
     );
 }

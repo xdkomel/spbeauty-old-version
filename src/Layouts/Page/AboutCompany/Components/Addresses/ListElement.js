@@ -4,14 +4,6 @@ import EditIcon from '../../../../../Icons/EditIcon';
 import RemoveIcon from '../../../../../Icons/RemoveIcon';
 import IconOnlyButton from '../../../../../Components/IconOnlyButton.js';
 
-const Button = styled.div`
-    background-color: #F2F2F2;
-    border: solid #DFDFDF 1px;
-    color: #2C3540;
-    &:hover {
-        color: #2C3540B8;
-    }
-`;
 const Option = styled.div`
     outline: none;
     border-radius: 0px;
