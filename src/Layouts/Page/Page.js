@@ -5,8 +5,8 @@ function Page() {
   return (
     <div className='flex-grow-1'>
       <Header/>
-      <div className='container'>
-        <AboutCompany/>
+      <div className='container'>  {/* Bootstrap container */}
+        <AboutCompany/>  {/* The page selected on sidebar. Currently is constant. */}
       </div>
     </div>
   );

@@ -26,17 +26,19 @@ const SearchIconWrapper = styled.div`
     background-color: #4B759E;
     position: absolute;
     box-sizing:border-box;
-    right: 0px;
+    right: 0px;  /* move it to the left by indenting it from the right side */
     top:50%;
     transform: translateY(-50%);
 `;
 
 function SearchField() {
     return (
-        <WrapperInput className='d-inline-flex'>
+        <WrapperInput className='d-inline-flex'>  {/* Set width and realtive position */}
             <Input className='p-2' placeholder='Найти на странице...'/>
-            <SearchIconWrapper className='p-2'>
-                <Clickable><SearchIcon/></Clickable>
+            <SearchIconWrapper className='p-2'>  {/* Is set with absolute position */}
+                <Clickable>
+                    <SearchIcon/>
+                </Clickable>
             </SearchIconWrapper>
         </WrapperInput>
     );

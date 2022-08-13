@@ -10,12 +10,12 @@ const Container = styled.div`
 function Header() {
     return (
         <Container className='d-flex justify-content-end align-items-center align-self-center px-4 py-3'>
-            <div className='me-4'>
+            <div className='me-4'> 
                 <SearchField/>
             </div>
-            <IconsRow/>
+            <IconsRow/>  {/* Buttons with messages and notifications */}
             <div className='ms-3'>
-                <Account/>
+                <Account/>  {/* Account's avatar and name */}
             </div>
         </Container>
     );

@@ -22,7 +22,7 @@ const SideMenuContainer = styled.div`
 
 function Sidebar() {
     return (
-        <Container>  
+        <Container> {/* Colored background */}
             <ButtonContainer className='m-3 d-flex'> {/* Button on the top left */}
                 <IconAndTextButton text='На главную' icon={<ArrowBackIcon/>}/>
             </ButtonContainer>
