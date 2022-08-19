@@ -4,10 +4,10 @@ import Addresses from "./Components/Addresses/Addresses";
 function AboutCompany() {
     return (
         <div>
-            <Heading/> {/* The page's title and a button on the right */}
+            <Heading/> {/* Заголовок и кнопка справа */}
             <div className='d-flex flex-column mt-5'>
-                <General/>  {/* The main info like name, type and phone number */}
-                <Addresses/> {/* A list of addresses this company is available at */}
+                <General/>  {/* Основная информация вроде названия, типа и телефона */}
+                <Addresses/> {/* Список доступных адресов заведений */}
             </div>
         </div>
     );

@@ -3,8 +3,8 @@ import Preferences from "./Components/Preferences";
 function General() {
     return (
         <div className='d-inline-flex flex-column'>
-            <Profile/> {/* Company's photo and short info as it's shown for users */}
-            <Preferences/> {/* Inputs for name, type and phone number */}
+            <Profile/> {/* Фото компании, название, тип и адрес */}
+            <Preferences/> {/* Инпуты, где можно поменять название, тип и адрес */}
         </div>
     );
 }

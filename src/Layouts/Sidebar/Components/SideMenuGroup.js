@@ -6,10 +6,10 @@ import styled from "styled-components";
 function SideMenuGroup({icon, groupName, groupId, tabs, active}) {
     return (
         <div>
-            {/* Makes a Menu group's heading with the specified icon and groupName */}
+            {/* Первая кнопка меню группы */}
             <SideMenuLink name={groupName} isActive={groupId == active} icon={icon}/>
             
-            {/* Makes all the options with the specified active. */}
+            {/* Остальные кнопки меню группы с одной и той же иконкой стрелки */}
             {tabs.map(tab => {
                 return (
                     <div key={tab[1]}>

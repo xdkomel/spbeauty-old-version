@@ -40,7 +40,7 @@ function SideMenuContents() {
                 ]}
                 active={activeTab}
             />
-            {/* The last menu button is an empty SideMenuGroup */}
+            {/* Последняя кнопка меню реализована как пустой SideMenuGroup */}
             <SideMenuGroup 
                 icon={<SettingsIcon/>} 
                 groupId='admin'

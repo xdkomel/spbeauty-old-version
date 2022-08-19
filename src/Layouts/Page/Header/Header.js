@@ -13,9 +13,9 @@ function Header() {
             <div className='me-4'> 
                 <SearchField/>
             </div>
-            <IconsRow/>  {/* Buttons with messages and notifications */}
+            <IconsRow/>  {/* Кнопки для сообщений и уведомлений */}
             <div className='ms-3'>
-                <Account/>  {/* Account's avatar and name */}
+                <Account/>  {/* Аватар и имя пользователя */}
             </div>
         </Container>
     );
