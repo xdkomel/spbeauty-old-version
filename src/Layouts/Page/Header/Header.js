@@ -13,12 +13,12 @@ const Container = styled.div`
 function Header() {
     return (
         <Container className='d-flex justify-content-between align-items-center align-self-center px-4 py-3'>
-            <div className="d-inline-flex gap-1">
+            <div className="d-inline-flex gap-1"> {/* Левая часть */}
                 <PrimaryButton minWidth='36px'><ArrowLeft/></PrimaryButton>
                 <PrimaryButton>Сегодня</PrimaryButton>
                 <PrimaryButton minWidth='36px'><ArrowRight/></PrimaryButton>
             </div>
-            <div className="d-inline-flex">
+            <div className="d-inline-flex"> {/* Правая часть */}
                 <div className='me-4'> 
                     <SearchField/>
                 </div>

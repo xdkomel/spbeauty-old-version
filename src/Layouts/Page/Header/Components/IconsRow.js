@@ -23,10 +23,14 @@ function IconsRow() {
     return (
         <div className='d-inline-flex flex-row align-items-center align-self-center'>
             <ButtonLeftWrapper>
-                <div className="text-rg-bd">Сообщения (0)</div>
+                <Clickable>
+                    <div className="text-rg-bd">Сообщения (0)</div>
+                </Clickable>
             </ButtonLeftWrapper>
             <ButtonRightWrapper>
-                <div className="text-rg-bd">Оповещения (0)</div>
+                <Clickable>
+                    <div className="text-rg-bd">Оповещения (0)</div>
+                </Clickable>
             </ButtonRightWrapper>
         </div>
     );
