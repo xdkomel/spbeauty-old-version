@@ -4,11 +4,6 @@ import SettingsIcon from '../../../Icons/SettingsIcon';
 import SideMenuGroup from './SideMenuGroup';
 import styled from 'styled-components';
 
-const ButtonContainer = styled.div`
-    &:hover {
-        opacity: 0.7;
-    }
-`;
 const activeTab = 'about-company';
 
 function SideMenuContents() {
