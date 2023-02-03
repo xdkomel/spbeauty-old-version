@@ -4,7 +4,7 @@ import IconOnlyButton from '../../../../Components/IconOnlyButton';
 
 const WrapperInput = styled.div`
     position:relative;
-    width: 216px;
+    width: 217px;
 `;
 
 const Input = styled.input`
@@ -14,19 +14,16 @@ const Input = styled.input`
     background-color: #F8FAFC;
     color: #E2E8F0;
     width: 100%;
-    &:hover {
-        background: linear-gradient(180deg, #DFEAF1 0%, #CFDDE8 100%);
-    }
     &:focus {
         background: white;
     }
 `;
 
 const SearchIconWrapper = styled.div`
-    background-color: #4B759E00;
+    background-color: ##94A3B8;
     position: absolute;
     box-sizing:border-box;
-    right: 0px;  /* Здесь можно добавить отступ от правого края, чтобы сдвинуть иконку левее */
+    right: 9px;  /* Здесь можно добавить отступ от правого края, чтобы сдвинуть иконку левее */
     top:50%;
     transform: translateY(-50%);
 `;
