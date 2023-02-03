@@ -1,4 +1,3 @@
-import PrimaryButton from "../../../../Components/PrimaryButton";
 import SecondaryButton from "../../../../Components/SecondaryButton";
 function Heading() {
     return (
