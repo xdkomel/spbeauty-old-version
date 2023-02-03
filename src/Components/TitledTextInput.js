@@ -6,7 +6,7 @@ const Input = styled.input`
     border: 1px solid #E2E8F0;
     background: #F8FAFC;
     color: #0F172A;
-        }
+    }
 `;
 
 function TitledTextInput({title, def}) {
